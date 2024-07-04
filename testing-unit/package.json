@@ -1,0 +1,20 @@
+{
+  "name": "@kvikk/example-testing-unit",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Kvikk.js - Unit tests example",
+  "imports": {
+    "#components/*": "./components/*",
+    "#layouts/*": "./layouts/*"
+  },
+  "scripts": {
+    "build": "kvikk build",
+    "start": "kvikk start",
+    "test": "node --test",
+    "dev": "kvikk dev"
+  },
+  "dependencies": {
+    "lit": "3.1.4"
+  }
+}
