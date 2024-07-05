@@ -1,14 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import kvikk from 'kvikk';
+import { config } from 'kvikk/test';
+import server from 'kvikk/server';
 
 test('Server', async (t) => {
-  const server = await kvikk();
-  await server.start();
+  const app = await server({}, config);
+  const address = await app.start();
 
-  await t.test('Route: /', async () => {
-    const response = await fetch('http://localhost:4000');
+  await t.test('Route: ./', async () => {
+    const response = await fetch(address);
     
     assert.equal(response.status, 200, 'Should result in an http status 200 response');
     assert.equal(response.ok, true, 'Should result in an OK response');
@@ -17,8 +18,8 @@ test('Server', async (t) => {
     await response.text();
   });
 
-  await t.test('Route: /error', async () => {
-    const response = await fetch('http://localhost:4000/error');
+  await t.test('Route: ./error', async () => {
+    const response = await fetch(new URL('./error', address));
     
     assert.equal(response.status, 404, 'Should result in an http status 404 response');
     assert.equal(response.ok, false, 'Should result in an NON OK response');
@@ -27,5 +28,5 @@ test('Server', async (t) => {
     await response.text();
   });
 
-  await server.stop();
+  await app.stop();
 });
