@@ -1,8 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { config } from 'kvikk/test';
-import server from 'kvikk/server';
+import { config } from 'hubro/test';
+import server from 'hubro/server';
 
 test('Server', async (t) => {
   const app = await server({}, config);

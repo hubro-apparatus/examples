@@ -1,20 +1,20 @@
 {
-  "name": "@kvikk/example-simple",
+  "name": "@hubro/example-simple",
   "version": "1.0.0",
   "type": "module",
   "private": true,
-  "description": "Kvikk.js - Simple example",
+  "description": "Hubro - Simple example",
   "imports": {
     "#components/*": "./components/*",
     "#layouts/*": "./layouts/*"
   },
   "scripts": {
-    "build": "kvikk build",
-    "start": "kvikk start",
-    "dev": "kvikk dev"
+    "build": "hubro build",
+    "start": "hubro start",
+    "dev": "hubro dev"
   },
   "dependencies": {
-    "kvikk": "*",
+    "hubro": "*",
     "lit": "3.1.4"
   }
 }

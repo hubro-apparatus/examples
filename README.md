@@ -1,2 +1,3 @@
-# examples
-Set of Kvikk examples
+# Hubro Examples
+
+Collection of examples.
