@@ -1,0 +1,20 @@
+{
+  "name": "@hubro/example-routes-simple",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Hubro - Simple routes example",
+  "imports": {
+    "#components/*": "./components/*",
+    "#layouts/*": "./layouts/*"
+  },
+  "scripts": {
+    "build": "hubro build",
+    "start": "hubro start",
+    "dev": "hubro dev"
+  },
+  "dependencies": {
+    "hubro": "*",
+    "lit": "3.2.0"
+  }
+}
