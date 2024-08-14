@@ -1,5 +1,5 @@
 import { html } from 'lit';
-import alpacaMap from '@purplebugs/alpaca-map';
+
 
 
 export const metadata = () => {

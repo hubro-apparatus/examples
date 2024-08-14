@@ -1,4 +1,4 @@
-import { html, isServer } from 'lit';
+import { html } from 'lit';
 
 import layout from '#layouts/layout.js';
 
