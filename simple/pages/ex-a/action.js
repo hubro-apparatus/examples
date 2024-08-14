@@ -1,4 +1,4 @@
-export default ({ searchParams, uriParams, body }) => {
-  console.log('BODY', body);
-  return 'POST:/cccc';
+export default async (request, response) => {
+  console.log('BODY', request.body);
+  response.headers.append('x-hubro', 'owl');
 };

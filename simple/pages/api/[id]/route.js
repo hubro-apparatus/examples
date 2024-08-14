@@ -1,3 +1,4 @@
+
 export async function GET() {
   return { type: 'GET', route: '/api/:id' };
 }
