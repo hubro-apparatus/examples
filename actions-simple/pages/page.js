@@ -1,4 +1,4 @@
-import { html } from '@lit-labs/ssr';
+import { html } from 'hubro/ssr';
 
 export const metadata = () => {
   return {
