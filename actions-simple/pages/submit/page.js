@@ -1,4 +1,4 @@
-import { html } from 'lit';
+import { html } from '@lit-labs/ssr';
 
 export default (props = {}) => {
   return html`

@@ -1,4 +1,4 @@
-import { html } from 'lit';
+import { html } from '@lit-labs/ssr';
 
 import layout from '#layouts/layout.js';
 
@@ -11,10 +11,16 @@ export const metadata = () => {
   };
 };
 
-export default () => {
+export const middleware = ({ server, request, response }) => {
+  return {
+    random: Math.random(),
+  }
+};
+
+export default (context = {}) => {
   return html`
     <k-layout>
-      <h1 slot="header">Simple Header</h1>
+      <h1 slot="header">Simple Header </h1>
 
       <p>Hello from my template.</p>
       <w-card>
@@ -22,6 +28,7 @@ export default () => {
         Slotted content
         <span slot="footer">Slotted Footer</span>
       </w-card>
+
       <w-card>
         <w-button></w-button>
       </w-card>

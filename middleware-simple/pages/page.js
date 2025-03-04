@@ -1,7 +1,5 @@
 import { html } from 'lit';
 
-
-
 export const metadata = () => {
   return {
     title: 'A page title',

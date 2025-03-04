@@ -1,4 +1,4 @@
-import { html } from 'lit';
+import { html } from '@lit-labs/ssr';
 
 export const metadata = () => {
   return {
@@ -6,7 +6,7 @@ export const metadata = () => {
   };
 };
 
-export default (props = {}) => {
+export default () => {
   return html`
     <h1>Hello form</h1>
     <form action="/submit" method="POST">

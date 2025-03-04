@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "hubro": "*",
-    "lit": "3.1.4"
+    "@lit-labs/ssr": "3.3.1",
+    "lit": "3.2.1"
   }
 }
