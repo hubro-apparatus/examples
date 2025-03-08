@@ -14,7 +14,7 @@
     "dev": "hubro dev"
   },
   "dependencies": {
-    "hubro": "0.1.1",
+    "hubro": "0.2.0",
     "@lit-labs/ssr": "3.3.1",
     "lit": "3.2.1"
   }
