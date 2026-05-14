@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "hubro": "*",
-    "lit": "3.2.1"
+    "lit": "3.3.3"
   }
 }
